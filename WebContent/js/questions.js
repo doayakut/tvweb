@@ -202,6 +202,7 @@ jQuery(document).ready(function ($) {
 		    			$('#tvweb_submit_icon').removeClass('icon-spinner');
 		    			$('#tvweb_submit_icon').addClass('icon-ok');
 		    			resetForm();
+		    			window.location.href="/tvweb2/home?action=logout&type=questions";
 		    		}
 		    		else{
 		    			$('#tvweb_submit_label').html('Could not submit data:' + data);

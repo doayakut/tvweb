@@ -6,6 +6,9 @@
     <non-jta-data-source>testDatabaseUnmanaged</non-jta-data-source>
     
     <properties>
+ 	 <property name="openjpa.jdbc.DBDictionary" value="org.apache.openjpa.jdbc.sql.MySQLDictionary" />
+                        <property name="openjpa.jdbc.SynchronizeMappings" value="buildSchema(ForeignKeys=true)"/>
+
 	<property name="openjpa.jdbc.SchemaFactory" value="native(ForeignKeys=true)" />
      <property name="openjpa.jdbc.SynchronizeMappings" value="buildSchema(ForeignKeys=true)"/>
     </properties>

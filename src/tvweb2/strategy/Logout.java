@@ -3,6 +3,7 @@ package tvweb2.strategy;
 import java.io.IOException;
 import java.util.ArrayList;
 
+import javax.security.auth.message.callback.PrivateKeyCallback.Request;
 import javax.servlet.http.HttpSession;
 
 import tvweb2.BaseServlet;
@@ -28,7 +29,12 @@ public class Logout implements BaseStgy {
 	public void execute() throws IOException {
 		HttpSession session = servlet.getRequest().getSession();
 		session.removeAttribute("user");
-	    servlet.redirect("/home");
+		String type = servlet.getRequest().getParameter("type") ;
+		
+		if (type != null && type.equalsIgnoreCase("questions"))
+			servlet.redirect("/home?type=questions");
+		else 
+			servlet.redirect("/home");
 
 	}
 

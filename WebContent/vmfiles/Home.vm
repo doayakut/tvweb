@@ -20,7 +20,7 @@
 	#if($pagetype == 'questions')
 		<h1>Treeview Experiment: Questionnaire and Answer</h1>
 	#else
-		<h1>Treeview Experiment</h1>
+		<h1>Treeview Experiment <span class="lead"><a href="/tvweb2/home?type=questions">Go to Questionnaire</a><span></h1> 
 	#end
     <form id="loginform" method="post" action="/tvweb2/home" class="form-horizontal text-center">
 		<div class="form-group">
