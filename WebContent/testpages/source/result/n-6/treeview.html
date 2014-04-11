@@ -1,0 +1,182 @@
+<!DOCTYPE HTML>
+<html>
+<title>Types of Fabric
+</title>
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+<link rel="stylesheet" href="/tvweb/css/exp.css">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"> </script>
+<script src="/tvweb/js/exp.js"> </script>
+
+<style>
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+    ul > li > ul {
+        margin-left: 10px;
+        padding-left: 10px;
+        border-left: 1px solid #888;
+    }
+    ul li {
+        font-size: 16px;
+        margin-top: 1em;
+    }
+    .btn {
+        padding: 1px 5px !important;
+    }
+    .tree-content {
+        width: 600px; 
+        margin: auto;
+        padding: 10px;
+        background-color: #f3f3f3;
+        border: 1px solid #eee;
+    }
+    .expcol {
+        margin-right: 1em;
+    }
+</style>
+
+<body>
+
+<div class="tree-content">
+<h1> Types of Fabric
+ </h1>
+<ul>
+    <li> 
+                <button class="btn btn-default pull-left expcol"> <i class="fa fa-plus"> </i> </button>
+
+            Fleece
+
+            <ul hidden>
+                <li>
+                    <a href="leaves/polarfleece.html">Polar fleece</a> 
+                </li>
+                <li>
+                    <a href="leaves/polarwool.html">Polar Wool</a> 
+                </li>
+            </ul>
+    </li>
+    <li> 
+                <button class="btn btn-default pull-left expcol"> <i class="fa fa-plus"> </i> </button>
+
+            Denim
+
+            <ul hidden>
+            </ul>
+    </li>
+    <li> 
+                <button class="btn btn-default pull-left expcol"> <i class="fa fa-plus"> </i> </button>
+
+            Lace
+
+            <ul hidden>
+            </ul>
+    </li>
+    <li> 
+                <button class="btn btn-default pull-left expcol"> <i class="fa fa-plus"> </i> </button>
+
+            Khaki
+
+            <ul hidden>
+            </ul>
+    </li>
+    <li> 
+                <button class="btn btn-default pull-left expcol"> <i class="fa fa-plus"> </i> </button>
+
+            Leather
+
+            <ul hidden>
+            </ul>
+    </li>
+    <li> 
+                <button class="btn btn-default pull-left expcol"> <i class="fa fa-plus"> </i> </button>
+
+            Chiffon
+
+            <ul hidden>
+            </ul>
+    </li>
+    <li> 
+                <button class="btn btn-default pull-left expcol"> <i class="fa fa-plus"> </i> </button>
+
+            Canvas
+
+            <ul hidden>
+            </ul>
+    </li>
+    <li> 
+                <button class="btn btn-default pull-left expcol"> <i class="fa fa-plus"> </i> </button>
+
+            Velvet
+
+            <ul hidden>
+            </ul>
+    </li>
+    <li> 
+                <button class="btn btn-default pull-left expcol"> <i class="fa fa-plus"> </i> </button>
+
+            Wool
+
+            <ul hidden>
+            </ul>
+    </li>
+    <li> 
+                <button class="btn btn-default pull-left expcol"> <i class="fa fa-plus"> </i> </button>
+
+            Burlap
+
+            <ul hidden>
+            </ul>
+    </li>
+    <li> 
+                <button class="btn btn-default pull-left expcol"> <i class="fa fa-plus"> </i> </button>
+
+            Brocade
+
+            <ul hidden>
+            </ul>
+    </li>
+    <li> 
+                <button class="btn btn-default pull-left expcol"> <i class="fa fa-plus"> </i> </button>
+
+            Cotton
+
+            <ul hidden>
+            </ul>
+    </li>
+    <li> 
+                <button class="btn btn-default pull-left expcol"> <i class="fa fa-plus"> </i> </button>
+
+            Rayon
+
+            <ul hidden>
+            </ul>
+    </li>
+    <li> 
+                <button class="btn btn-default pull-left expcol"> <i class="fa fa-plus"> </i> </button>
+
+            Silk
+
+            <ul hidden>
+            </ul>
+    </li>
+    <li> 
+                <button class="btn btn-default pull-left expcol"> <i class="fa fa-plus"> </i> </button>
+
+            Flannel
+
+            <ul hidden>
+            </ul>
+    </li>
+</ul>
+</div>
+<script>
+$('.expcol').click(function(){
+    $(this).siblings('ul').toggle();
+    $(this).children().toggleClass('fa-plus').toggleClass('fa-minus');
+})
+</script>
+</body>
+</html>

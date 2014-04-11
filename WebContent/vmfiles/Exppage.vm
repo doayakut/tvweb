@@ -1,0 +1,78 @@
+<div class="exp-controller">
+	#if($state == "QUESTION")
+		<div style="text-align:left; margin-top: 3em;">
+    	<span style="font-family: Georgia; line-height: 130%; font-size:22px; font-weight: 500;">$!question</span>
+        </div>
+		<hr style="color: #ddd;background-color: #ddd; height:2px"/>
+		<div style="text-align:left">
+		<span style="font-family: Georgia; line-height: 130%; font-size:22px; font-weight: 500; color: #000">$!definition</span>
+		</div>
+	#elseif($state != "TASKS" && $state != "TRAINING")
+		<h1>$text</h1>
+		<hr/>
+		<a href="/tvweb2/home?action=next" class="exp-btn exp-btn-info"  ><span class="exp-lead">Continue</span></a> <!-- Add state to button -->
+	#else
+		
+		#if($state == "TASKS")
+			#set($ttask = $user.task + 1)
+			#set($text = "[Task: " + $ttask + "]")
+		#else 
+			#set($text = $state)
+		#end
+    	<button href="/tvweb2/home?action=exp&url=/testpages/$filepath" id="controller" class="exp-btn exp-btn-default" disabled ><span class="exp-lead">Start</span></button> <!-- Add state to button -->
+    	<button id="controller" class="exp-btn exp-btn-default" disabled ><span class="exp-lead">Stop</span></button> <!-- Add state to button -->
+    	<button id="controller" class="exp-btn exp-btn-default" disabled ><span class="exp-lead">Continue</span></button> <!-- Add state to button -->
+		<button id="controller" class="exp-btn exp-btn-default" disabled ><span class="exp-lead">Question</span></button> <!-- Add state to button -->
+		
+		<div style="text-align:left; margin-top: 3em;">
+    	<span style="font-family: Georgia; line-height: 130%; font-size:22px; font-weight: 500;">$!question</span>
+        </div>
+		<hr style="color: #ddd;background-color: #ddd; height:2px"/>
+		<div style="text-align:left">
+		<span style="font-family: Georgia; line-height: 130%; font-size:22px; font-weight: 500; color: #000">$!definition</span>
+		</div>
+    	<!-- <span class="lead">$!pageinfo</span> -->
+    	<script>
+    		$('#controller').on('click', function(event){
+				event.preventDefault();
+				$('body').children().css('display','none');
+				window.location.href = $(this).attr('href');
+				localStorage['tvweb_mobile_state'] = 'started';
+			});
+			
+			if(localStorage['tvweb_mobile_state'] == 'started'){
+				window.location.href = $('#controller').attr('href');
+			}
+			else {
+				$('#controller').removeAttr('disabled');
+				$('#controller').addClass('exp-btn-success');
+				$('#controller').removeClass('exp-btn-default');
+			}
+			
+        	if(typeof(Storage)!=="undefined")
+        	{	
+        		// Yes! localStorage and sessionStorage support!
+        
+        		// last start time = get current time
+        		localStorage['tvweb_elapsed'] = 0;
+        	}
+        	else
+        	{
+        		alert("Error: Does not support elapsed time logging. Please change browser or device.");
+        	  // Sorry! No web storage support..
+        	}
+			
+			function setCookie(c_name, value, exdays) {
+				var exdate = new Date();
+				exdate.setDate(exdate.getDate() + exdays);
+				var c_value = escape(value)
+						+ ((exdays == null) ? "" : "; expires="
+								+ exdate.toUTCString());
+				document.cookie = c_name + "=" + c_value;
+			}
+			setCookie("username", "$user.name", 1);
+			</script>
+	#end
+</div>
+		
+  

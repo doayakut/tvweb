@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<html>
+<title>$title</title>
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+<link rel="stylesheet" href="/tvweb2/css/exp.css">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"> </script>
+<script src="/tvweb2/js/exp.js"> </script>
+=======
+=======
+>>>>>>> FETCH_HEAD
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+<link rel="stylesheet" href="/tvweb/css/exp.css">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"> </script>
+<script src="/tvweb/js/exp.js"> </script>
+<<<<<<< HEAD
+>>>>>>> FETCH_HEAD
+=======
+>>>>>>> FETCH_HEAD
+
+<style>
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+    ul > li > ul {
+        margin-left: 10px;
+        padding-left: 10px;
+        border-left: 1px solid #888;
+    }
+    ul li {
+        font-size: 16px;
+<<<<<<< HEAD
+<<<<<<< HEAD
+        padding-top: 1em;
+=======
+        margin-top: 1em;
+>>>>>>> FETCH_HEAD
+=======
+        margin-top: 1em;
+>>>>>>> FETCH_HEAD
+    }
+    .btn {
+        padding: 1px 5px !important;
+    }
+    .tree-content {
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        width: 600px; 
+        margin: auto;
+>>>>>>> FETCH_HEAD
+=======
+        width: 600px; 
+        margin: auto;
+>>>>>>> FETCH_HEAD
+        padding: 10px;
+        background-color: #f3f3f3;
+        border: 1px solid #eee;
+    }
+    .expcol {
+        margin-right: 1em;
+    }
+</style>
+
+<body>
+
+<div class="tree-content">
+<<<<<<< HEAD
+<<<<<<< HEAD
+<ul>
+    #set $count = 0
+    #for $sc in $sections    
+        #set $count = $count + 1
+    <li> 
+        
+        <a href="$sc.link" aria-label="$count $sc.title">$sc.title</a> 
+
+        #if $pagetype != 's'
+
+            #if $usertype == 'n'
+                 <button aria-label='Expand' class="btn btn-default  expcol pull-left"> <i class="fa fa-plus"> </i> </button>
+            #else
+                <button aria-label='Expand' class="btn btn-default  expcol pull-right"> <i class="fa fa-plus"> </i> </button>
+            #end if
+
+            <ul hidden>
+
+            #set $subcount = 0
+            #for $sc2 in $sc.sections    
+                #set $subcount = $subcount + 1
+                <li>
+                    <a href="leaves/$sc2.link" aria-label="$count.$subcount $sc2.title">$sc2.title</a> 
+=======
+=======
+>>>>>>> FETCH_HEAD
+<h1> $title </h1>
+<ul>
+    #for $sc in $sections    
+    <li> 
+        #if $pagetype == 's'
+            <a href="$sc.link">$sc.title</a> 
+        #else
+            #if $usertype == 'n'
+                <button class="btn btn-default pull-left expcol"> <i class="fa fa-plus"> </i> </button>
+            #else
+                <button class="btn btn-default pull-right expcol"> <i class="fa fa-plus"> </i> </button>    
+            #end if
+
+            $sc.title
+            <ul hidden>
+            #for $sc2 in $sc.sections    
+                <li>
+                    <a href="leaves/$sc2.link">$sc2.title</a> 
+<<<<<<< HEAD
+>>>>>>> FETCH_HEAD
+=======
+>>>>>>> FETCH_HEAD
+                </li>
+            #end for
+            </ul>
+        #end if
+    </li>
+    #end for
+</ul>
+</div>
+<script>
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+\$('.expcol').click(function(){
+    \$(this).siblings('ul').toggle();
+    if(\$(this).siblings('ul').is(':visible')){
+        \$(this).attr('aria-label', 'Collapse');
+        \$(this).html('<i class="fa fa-minus"> </i>');
+        \$(this).siblings('ul').children(':first').children('a').focus();
+    }
+    else{
+        \$(this).attr('aria-label', 'Expand');
+        \$(this).html('<i class="fa fa-plus"> </i>');
+    }
+    return false;
+=======
+\$('.expcol').click(function(){
+    \$(this).siblings('ul').toggle();
+    \$(this).children().toggleClass('fa-plus').toggleClass('fa-minus');
+>>>>>>> FETCH_HEAD
+=======
+\$('.expcol').click(function(){
+    \$(this).siblings('ul').toggle();
+    \$(this).children().toggleClass('fa-plus').toggleClass('fa-minus');
+>>>>>>> FETCH_HEAD
+})
+</script>
+</body>
+</html>

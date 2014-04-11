@@ -1,0 +1,63 @@
+#if($type == "elapsed")
+<table  class="table table-bordered">
+	<thead>
+		<tr>
+            <th>Name</th>
+            <th>Task 1</th>
+            <th>Task 2</th>
+            <th>Task 3</th>
+            <th>Task 4</th>
+            <th>Task 5</th>
+            <th>Task 6</th>
+            <th>Task 7</th>
+            <th>Task 8</th>
+            <th>Task 9</th>
+            <th>Task 10</th>
+            <th>Task 11</th>
+            <th>Task 12</th>
+            <th>Task 13</th>
+            <th>Task 14</th>
+            <th>Task 15</th>
+            <th>Task 16</th>
+            <th>Task 17</th>
+            <th>Task 18</th>
+		</tr>
+		#foreach( $user in $users )
+		<tr>
+			<td>$user.name</td>
+        	#foreach ( $t in $user.times )
+            <td>$t</td>
+    		#end
+    	</tr>
+    	#end
+			
+	</thead>
+
+#end
+#if($type == "order")
+
+<table  class="table table-bordered">
+	<thead>
+		<tr>
+            <th>Name</th>
+            <th>Test 1</th>
+            <th>Test 2</th>
+            <th>Test 3</th>
+            <th>Test 4</th>
+            <th>Test 5</th>
+            <th>Test 6</th>
+		</tr>
+			
+	</thead>
+	<tbody>
+    #foreach( $user in $users )
+		<tr>
+			<td>$user.name</td>
+        	#foreach ( $o in $user.order )
+            <td>$o</td>
+    		#end
+		</tr>
+	#end
+    </tbody>
+</table>
+#end

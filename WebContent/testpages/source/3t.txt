@@ -1,0 +1,123 @@
+Simple
+Brands of Water
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> FETCH_HEAD
+Dasani
+The first source of Dasani water was in Alberta.
+Dasani is owned by The Pepsi Company.
+The company was launched in 1999, after the success of Aquafina.
+The Dasani brand includes flavored water; lemon, grape, raspberry, and strawberry.
+Dasani was introduced to the Brazilian market in mid-2003.
+
+Deer Park Spring Water
+The original source of the water was a spring near Deer Park, Maryland.
+It is a division of NestlÃ©.
+Deer Park Spring Water was established in 1467.
+Deer Park's current slogan is "Born Better".
+In 2006, the Aquapod was released under this brand.
+
+<<<<<<< HEAD
+>>>>>>> FETCH_HEAD
+=======
+>>>>>>> FETCH_HEAD
+Antipodes Water Company
+Antipodes Water Company is a New Zealand water-bottling company.
+It was established in 2003.
+Antipodes water is sourced from an aquifer 327 metres below the ground in the Bay of Plenty.
+In 2012, it won a silver in the carbonated bottled water category.
+It is bottled at the source in Otakiri.
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+Fiji
+Fiji water comes from an artesian aquifer in the Yaqara Valley of Viti Levu.
+The company is owned by Carter family.
+Fiji waters was started in 1996 by David Gilmour.
+The pH of Fiji waters is 7.9.
+In December 2010, Fiji Water's Fiji plant had 400 employees.
+
+=======
+>>>>>>> FETCH_HEAD
+=======
+>>>>>>> FETCH_HEAD
+Aquafina
+Aquafina waters are purified by going through a process called reverse osmosis.
+Dasani is owned by PepsiCo.
+It was first distributed in Wichita, Kansas in 1994.
+The Aquafina brand includes flavored water; grape, strawberry kiwi, wild berry, raspberry, lemon, and peach mango.
+As of 2009, Aquafina represented 13.4 % of domestic bottled water sales in the US.
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> FETCH_HEAD
+
+Fiji
+Fiji water comes from an artesian aquifer in the Yaqara Valley of Viti Levu.
+The company is owned by Carter family.
+Fiji waters was started in 1996 by David Gilmour.
+The pH of Fiji waters is 7.9.
+In December 2010, Fiji Water's Fiji plant had 400 employees.
+
+<<<<<<< HEAD
+>>>>>>> FETCH_HEAD
+=======
+>>>>>>> FETCH_HEAD
+Evian
+Evian mineral waters comes from several sources near the south shore of Lake Geneva.
+The pH of Evian waters is 7.2.
+Evian is owned by a French multinational company.
+Mineral Water company was founded in 1829.
+The company entered into the U.S. market 1978.
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+Dasani
+The first source of Dasani water was in Alberta.
+Dasani is owned by The Pepsi Company.
+The company was launched in 1999, after the success of Aquafina.
+The Dasani brand includes flavored water; lemon, grape, raspberry, and strawberry.
+Dasani was introduced to the Brazilian market in 1972.
+
+=======
+>>>>>>> FETCH_HEAD
+=======
+>>>>>>> FETCH_HEAD
+Nestle Pure Life
+The first source of Nestle waters was Aberfoyle Springs.
+Nestle Pure Life water is also sold in Canada.
+Nestle has 17 bottling facilities in Canada.
+The brand has been sold as Nestle Pure Life since 2002.
+The pH of Nestle Pure Life waters is 7.5.
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+Deer Park Spring Water
+The original source of the water was a spring near Deer Park, Maryland.
+It is a division of NestlÃ©.
+Deer Park Spring Water was established in 1467.
+Deer Park's current slogan is "Drink More".
+In 2006, the Aquapod was released under this brand.
+
+=======
+>>>>>>> FETCH_HEAD
+=======
+>>>>>>> FETCH_HEAD
+Mountain Valley Spring Water
+Mountain Valley Spring Water is bottled in Hot Springs, Arkansas.
+It has been bottled continuously since 1871.
+Mountain Valley Spring Water is currently owned by Clear Mountain Spring Water Company of Little Rock, Arkansas.
+In 2003, it received a Gold Medal at the Berkeley Springs International Water Tasting Awards for Non-Carbonated Bottled Water.
+Following a heart attack in 1955, President Dwight Eisenhower drank the water on the advice of his physician
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> FETCH_HEAD
+=======
+
+>>>>>>> FETCH_HEAD

@@ -1,0 +1,170 @@
+@CHARSET "US-ASCII";
+
+#blockDiv {
+	position: absolute;
+	top: 50px;
+	right: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 999;
+}
+
+.exp-btn,.exp-btn-question {
+	width: 22%;
+	display: inline-block;
+	padding: 6px 0px;
+	margin: 0em 0.02em;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 1.428571429;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	border: 0px solid transparent;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+.exp-btn:hover {
+	color: #333333;
+	text-decoration: none;
+}
+
+.exp-btn-primary {
+	color: #fff;
+	background-color: #428bca;
+	border-color: #357ebd;
+}
+
+.exp-btn-primary:hover,.exp-btn-primary:focus,.exp-btn-primary:active,.exp-btn-primary.active,.open .dropdown-toggle.btn-primary
+	{
+	color: #ffffff;
+	background-color: #3276b1;
+	border-color: #285e8e;
+}
+
+.exp-btn-success {
+	color: #fff;
+	background-color: #5cb85c;
+	border-color: #4cae4c;
+}
+
+.exp-btn-success:hover,.exp-btn-success:focus,.exp-btn-success:active,.exp-btn-success.active,.open .dropdown-toggle.exp-btn-success
+	{
+	color: #ffffff;
+	background-color: #47a447;
+	border-color: #398439;
+}
+
+.exp-btn-info {
+	color: #fff;
+	background-color: #49afcd;
+	border-color: #2f96b4 #2f96b4 #1f6377;
+}
+
+.exp-btn-info:hover,.exp-btn-info:focus,.exp-btn-info:active,.exp-btn-info.active,.open .dropdown-toggle.exp-btn-info
+	{
+	color: #fff;
+	background-color: #2f96b4;
+	border-color: #1f9377;
+}
+
+
+.exp-btn-danger {
+	color: #fff;
+	background-color: #d9534f;
+	border-color: #d43f3a;
+}
+
+.exp-btn-danger:hover,.exp-btn-danger:focus,.exp-btn-danger:active,.exp-btn-danger.active,.open .dropdown-toggle.btn-danger
+	{
+	color: #ffffff;
+	background-color: #d2322d;
+	border-color: #ac2925;
+}
+
+
+.exp-btn-default {
+	color: #000;
+	background-color: #aaa;
+	border-color: #aaa;
+}
+
+.exp-btn-default:hover,.exp-btn-danger:focus,.exp-btn-danger:active,.exp-btn-danger.active,.open .dropdown-toggle.btn-danger
+	{
+	color: #fff;
+	background-color: #aaa;
+	border-color: #aaa;
+}
+
+.exp-lead {
+	font-weight: 500;
+	font-size: 0.9em;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.exp-controller {
+	background: #fff;
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	padding-top: 2em;
+	top: 0px;
+	left: 0;
+	right: 0;
+	z-index: 9999;
+	margin: 0em 0em;
+	text-align: center;
+}
+
+.exp-modal {
+	position: fixed;
+	top: 5em;
+	z-index: 999999999;
+}
+
+.exp-modal.fade .exp-modal-dialog {
+	-webkit-transform: translate(0, -25%);
+	-ms-transform: translate(0, -25%);
+	transform: translate(0, -25%);
+	-webkit-transition: -webkit-transform .3s ease-out;
+	-moz-transition: -moz-transform .3s ease-out;
+	-o-transition: -o-transform .3s ease-out;
+	transition: transform .3s ease-out
+}
+
+.exp-modal.in .exp-modal-dialog {
+	-webkit-transform: translate(0, 0);
+	-ms-transform: translate(0, 0);
+	transform: translate(0, 0)
+}
+
+.exp-modal-dialog {
+	z-index: 1050;
+	width: auto;
+	padding: 10px;
+	margin-right: auto;
+	margin-left: auto
+}
+
+.exp-modal-content {
+	position: relative;
+	background-color: #fff;
+	border: 1px solid #999;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 6px;
+	outline: 0;
+	-webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+	background-clip: padding-box
+}
+
+.exp-modal-body {
+	position: relative;
+	padding: 20px
+}

@@ -1,0 +1,72 @@
+Simple
+Types of Vehicles
+Trains 
+Earlier, almost all trains were powered by steam locomotives. 
+Most bogies have seven axles, as this is the simplest design. 
+A train is a form of rail transport consisting of a series of vehicles propelled along a rail track to transport 
+cargo or passengers 
+When referring to a train made up of a variety of vehicles, or of several sets/units, the term formation is 
+used. 
+A bogie is a wheeled wagon or trolley. 
+ 
+Motorcycles 
+A motorcycle (also called a moto) is a two or three wheeled motor vehicle 
+There are around 200 million motorcycles in use worldwide 
+There are about 33 motorcycles per 1000 people 
+Most of the motorcycles, 58%, are in the developing countries of Asia 
+As of 2002, India, with an estimated 37 million motorcycles/mopeds, was home to the largest number of 
+motorized two wheelers in the world. 
+ 
+Buses 
+A bus is a road vehicle designed to carry passengers. 
+Buses can have a capacity as high as 300 passengers. 
+Steam buses were used starting in in the 1830. 
+The first buses powered by internal combustion engines were used in 1895. 
+Bus is a clipped form of the Latin word Omnibus. 
+ 
+Trucks 
+A truck or lorry is a motor vehicle designed to transport cargo. 
+In the EU, vehicles with a mass of less than 3,500 kilograms are known as light commercial vehicles 
+In Australia and New Zealand, a pickup truck is sometimes referred to as an Ute. 
+The cab is an enclosed space where the driver is seated. 
+A “sleeper” is a compartment attached to the cab where the driver can rest while not driving, 
+
+Boats 
+A boat is a watercraft of any size designed to float and travel on water 
+The oldest recovered boat in the world is the Amazon canoe 
+In naval terms, a boat is a vessel small enough to be carried aboard on a ship. 
+Dugouts are the oldest boats archaeologists have found, dating back about eight thousand years 
+The sides of the boat is also called a gunnel 
+ 
+Cars 
+The year of birth of the modern automobile is the year of 1866 
+The first working steam-powered car was designed by Ferdinand Verbiest around 1672. 
+It was a 65 cm-long scale-model toy for the Chinese Emperor, that was unable to carry a driver or a 
+passenger 
+Nicolas-Joseph Cugnot is widely credited with building the first full-scale, self-propelled mechanical 
+vehicle or automobile in about 1769. 
+He created a steam-powered tricycle. 
+ 
+Airplanes 
+An airplane is a powered fixed-wing aircraft that is propelled forward by thrust from a propeller. 
+Around 400 BC Archytas was reputed to have designed first self-propelled flying device 
+Sir George Cayley set forth the concept of the modern airplane in 1829 
+Sir Hiram Maxim built a craft that weighed 3.5 tons 
+The first jet airliner, the de Havilland Comet, was introduced in 1952. 
+ 
+Bicycles 
+A bicycle a vehicle composed of two wheels, and propelled by pedals. 
+The first chain-driven model was developed around 1885. 
+Before 1868, and in some places thereafter, bikes were known primarily as velocipedes. 
+The first mechanically-propelled, two-wheeled vehicle may have been built by Kirkpatrick MacMillan, a 
+Scottish blacksmith, in 1839. 
+He is associated with the first recorded instance of a cycling traffic offense when he knocked over a little 
+<<<<<<< HEAD
+<<<<<<< HEAD
+girl in Glasgow and was fined five shillings. 
+=======
+girl in Glasgow and was fined five shillings. 
+>>>>>>> FETCH_HEAD
+=======
+girl in Glasgow and was fined five shillings. 
+>>>>>>> FETCH_HEAD

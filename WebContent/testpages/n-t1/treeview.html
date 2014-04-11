@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+<title>Wine Styles
+</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+<link rel="stylesheet" href="/tvweb2/css/exp.css">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"> </script>
+<script src="/tvweb2/js/exp.js"> </script>
+
+<style>
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+    ul > li > ul {
+        margin-left: 10px;
+        padding-left: 10px;
+        border-left: 1px solid #888;
+    }
+    ul li {
+        font-size: 16px;
+        padding-top: 1em;
+    }
+    .btn {
+        padding: 1px 5px !important;
+    }
+    .tree-content {
+        padding: 10px;
+        background-color: #f3f3f3;
+        border: 1px solid #eee;
+    }
+    .expcol {
+        margin-right: 1em;
+    }
+</style>
+
+<body>
+
+<div class="tree-content">
+<ul>
+    <li> 
+        
+        <a href="0.html" aria-label="1 Dessert wine
+">Dessert wine
+</a> 
+
+    </li>
+    <li> 
+        
+        <a href="1.html" aria-label="2 Fruit wine
+">Fruit wine
+</a> 
+
+    </li>
+    <li> 
+        
+        <a href="2.html" aria-label="3 Orange wine
+">Orange wine
+</a> 
+
+    </li>
+    <li> 
+        
+        <a href="3.html" aria-label="4 Red wine
+">Red wine
+</a> 
+
+    </li>
+    <li> 
+        
+        <a href="4.html" aria-label="5 Sparkling wine
+">Sparkling wine
+</a> 
+
+    </li>
+</ul>
+</div>
+<script>
+
+$('.expcol').click(function(){
+    $(this).siblings('ul').toggle();
+    if($(this).siblings('ul').is(':visible')){
+        $(this).attr('aria-label', 'Collapse');
+        $(this).html('<i class="fa fa-minus"> </i>');
+        $(this).siblings('ul').children(':first').children('a').focus();
+    }
+    else{
+        $(this).attr('aria-label', 'Expand');
+        $(this).html('<i class="fa fa-plus"> </i>');
+    }
+    return false;
+})
+</script>
+</body>
+</html>

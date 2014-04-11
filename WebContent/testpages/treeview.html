@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+<title>Types of Fish
+</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+<link rel="stylesheet" href="/tvweb2/css/exp.css">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"> </script>
+<script src="/tvweb2/js/exp.js"> </script>
+
+<style>
+</style>
+
+<body>
+
+<div class="tree-content">
+<a class="btn btn-default" aria-label="Expand">x</a>
+</div>
+<script>
+
+$('.expcol').click(function(){
+    $(this).parent().siblings('ul').toggle();
+    if($(this).parent().siblings('ul').is(':visible')){
+        $(this).text('Collapse');
+    }
+    else{
+        $(this).text('Expand');
+    }
+    return false;
+})
+</script>
+</body>
+</html>
