@@ -8,6 +8,8 @@ import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
+import javax.persistence.Column;
+
 import org.apache.poi.hssf.usermodel.HSSFPalette;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.hssf.util.HSSFColor;
@@ -28,6 +30,7 @@ import tvweb2.jpa.enums.Form;
 import tvweb2.jpa.enums.Method;
 import tvweb2.jpa.enums.Task;
 import tvweb2.jpa.evaluation.Familiarity;
+import tvweb2.jpa.evaluation.PreStudy;
 import tvweb2.jpa.evaluation.Questionnaire;
 import tvweb2.jpa.evaluation.Tasks;
 import tvweb2.jpa.service.UserService;
@@ -90,6 +93,7 @@ public class Export implements BaseStgy {
 				offset = writeAnswers(r, u, offset) + 1;
 				offset = writeFamiliarity(r, u, offset) + 1;
 				offset = writeQuestionnaire(r, u, offset) + 1;
+				offset = writePreStudy(r, u, offset) + 1;
 				total_width = offset;
 			}
 
@@ -237,9 +241,31 @@ public class Export implements BaseStgy {
 					r.createCell(offset + i).setCellValue(f.getAnswer(i));
 			}
 		return offset + width;
-
 	}
 
+	private int writePreStudy(Row r, User u, int offset){
+		int width = 12;
+		PreStudy ps = u.getPrestudy();
+		if(ps != null) {
+			
+			r.createCell(offset + 1).setCellValue(ps.getAge());
+			r.createCell(offset + 2).setCellValue(ps.getGender());
+			r.createCell(offset + 3).setCellValue(ps.getEdu());
+			r.createCell(offset + 4).setCellValue(ps.getExp());
+			r.createCell(offset + 5).setCellValue(ps.getOwner());
+			r.createCell(offset + 6).setCellValue(ps.getFreq());
+			r.createCell(offset + 7).setCellValue(ps.getAim());
+			r.createCell(offset + 8).setCellValue(ps.getTools());
+			r.createCell(offset + 9).setCellValue(ps.getDisabilities());
+			r.createCell(offset + 10).setCellValue(ps.getBlindSince());
+			r.createCell(offset + 11).setCellValue(ps.getProbs());
+			r.createCell(offset + 12).setCellValue(ps.getSols());
+		}
+		
+		return offset;
+		
+	}
+	
 	private void prepSheets() {
 
 		wb = new HSSFWorkbook();
@@ -499,6 +525,46 @@ public class Export implements BaseStgy {
 		sheetNormal.addMergedRegion(new CellRangeAddress(2, 2, 76, 92));
 		sheetNormal.addMergedRegion(new CellRangeAddress(2, 2, 93, 109));
 		sheetNormal.addMergedRegion(new CellRangeAddress(2, 2, 110, 126));
+		
+		createGrayCell(row0_blind, 127);
+		createGrayCell(row0_normal, 127);
+		
+		// PRESTUDY HEADING
+		createCell(row0_blind, 128)
+				.setCellValue(
+						"PreStudy");
+		sheetBlind.addMergedRegion(new CellRangeAddress(0, 0, 128, 139));
+		createCell(row0_normal, 128)
+				.setCellValue(
+						"PreStudy");
+		sheetNormal.addMergedRegion(new CellRangeAddress(0, 0, 128, 139));
+
+		createBoldCell(row1_blind, 128).setCellValue("Age");
+		createBoldCell(row1_blind, 129).setCellValue("Gender");
+		createBoldCell(row1_blind, 130).setCellValue("Education");
+		createBoldCell(row1_blind, 131).setCellValue("Experience");
+		createBoldCell(row1_blind, 132).setCellValue("Owner");
+		createBoldCell(row1_blind, 133).setCellValue("Frequency");
+		createBoldCell(row1_blind, 134).setCellValue("Aim");
+		createBoldCell(row1_blind, 135).setCellValue("Tools");
+		createBoldCell(row1_blind, 136).setCellValue("Other Disabilities");
+		createBoldCell(row1_blind, 137).setCellValue("Blind Since");
+		createBoldCell(row1_blind, 138).setCellValue("Probs");
+		createBoldCell(row1_blind, 139).setCellValue("Sols");
+
+		createBoldCell(row1_normal, 128).setCellValue("Age");
+		createBoldCell(row1_normal, 129).setCellValue("Gender");
+		createBoldCell(row1_normal, 130).setCellValue("Education");
+		createBoldCell(row1_normal, 131).setCellValue("Experience");
+		createBoldCell(row1_normal, 132).setCellValue("Owner");
+		createBoldCell(row1_normal, 133).setCellValue("Frequency");
+		createBoldCell(row1_normal, 134).setCellValue("Aim");
+		createBoldCell(row1_normal, 135).setCellValue("Tools");
+		createBoldCell(row1_normal, 136).setCellValue("Other Disabilities");
+		createBoldCell(row1_normal, 137).setCellValue("Blind Since");
+		createBoldCell(row1_normal, 138).setCellValue("Probs");
+		createBoldCell(row1_normal, 139).setCellValue("Sols");
+		
 
 	}
 
